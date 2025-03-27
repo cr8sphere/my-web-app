@@ -7,7 +7,7 @@ const About = () => {
         <div className="about-container">
             {/* Behind Cre8sphere Creative Section */}
             <div className="behind-section">
-                <h2>Behind Cre8sphere Creative</h2>
+                <h2>Behind Cre8sphere Creative!</h2>
                 <p>
                     We are a team of innovators, designers, and storytellers dedicated to delivering exceptional creative solutions. Our passion for design and storytelling fuels everything we do.
                 </p>

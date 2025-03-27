@@ -5,7 +5,7 @@ import '../styles/Designs.css';
 const Designs = () => {
     return (
         <div className="designs-container">
-            <h2>Our In-House Designs</h2>
+            <h2>Our In-House Designs and More</h2>
             <div className="designs-scroll">
                 <div className="design-image">
                     <img src="/images/design1.png" alt="Design 1 - Wall with sketches" />

@@ -15,7 +15,7 @@ const Navbar = () => {
 
                 <img src="/logo.png" alt="Digital Agency Logo" />
 
-                <span>Digital Agency</span>
+                <span>Your  Digital Agency...</span>
             </div>
 
             <ul className="navbar-links">

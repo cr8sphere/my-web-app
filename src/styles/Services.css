@@ -1,0 +1,105 @@
+/* src/styles/Services.css */
+
+/* Styles for the main container of the services section */
+.services-container {
+    /* Adds padding around the section */
+    padding: 50px;
+    /* Sets a light green background color */
+    background-color: #e6f0ea;
+}
+
+/* Styles for the header section containing the title and subtitle */
+.services-header {
+    /* Centers the text */
+    text-align: center;
+    /* Adds space below the header */
+    margin-bottom: 40px;
+}
+
+/* Styles for the main heading */
+.services-header h2 {
+    /* Sets font size for the heading */
+    font-size: 2.5rem;
+    /* Sets dark color for the heading */
+    color: #1a2a2f;
+    /* Adds space below the heading */
+    margin-bottom: 10px;
+}
+
+/* Styles for the subheading */
+.services-header p {
+    /* Sets font size for the subheading */
+    font-size: 1.2rem;
+    /* Sets a lighter gray color for the subheading */
+    color: #666;
+}
+
+/* Styles for the grid layout of service cards */
+.services-grid {
+    /* Uses CSS grid for layout */
+    display: grid;
+    /* Creates a 3-column grid with equal width columns */
+    grid-template-columns: repeat(3, 1fr);
+    /* Adds space between grid items */
+    gap: 20px;
+}
+
+/* Styles for each service card */
+.service-card {
+    /* Sets white background for the card */
+    background-color: white;
+    /* Adds padding inside the card */
+    padding: 20px;
+    /* Adds subtle rounded corners */
+    border-radius: 10px;
+    /* Adds a slight shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Centers text within the card */
+    text-align: center;
+}
+
+/* Styles for the icon placeholder */
+.service-icon {
+    /* Sets font size for the icon (emoji in this case) */
+    font-size: 2rem;
+    /* Sets teal color for the icon */
+    color: #00c4b4;
+    /* Adds space below the icon */
+    margin-bottom: 15px;
+}
+
+/* Styles for the service title */
+.service-card h3 {
+    /* Sets font size for the title */
+    font-size: 1.5rem;
+    /* Sets dark color for the title */
+    color: #1a2a2f;
+    /* Adds space below the title */
+    margin-bottom: 10px;
+}
+
+/* Styles for the service description */
+.service-card p {
+    /* Sets font size for the description */
+    font-size: 1rem;
+    /* Sets a lighter gray color for the description */
+    color: #666;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+
+    /* Adjusts grid to 2 columns on smaller screens */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive design for very small screens */
+@media (max-width: 480px) {
+
+    /* Adjusts grid to 1 column on very small screens */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,96 @@
+/* src/styles/Navbar.css */
+
+/* Styles for the main navigation bar */
+.navbar {
+    /* Uses flexbox for horizontal layout */
+    display: flex;
+    /* Distributes space evenly between logo and links */
+    justify-content: space-between;
+    /* Vertically centers all items */
+    align-items: center;
+    /* Adds padding on top/bottom and left/right */
+    padding: 20px 50px;
+    /* Sets a dark teal background color */
+    background-color: #1a2a2f;
+    /* Sets text color to white for all children */
+    color: white;
+}
+
+/* Styles for the logo container */
+.navbar-logo {
+    /* Uses flexbox to align logo and text */
+    display: flex;
+    /* Vertically centers logo and text */
+    align-items: center;
+    /* Adds 10px space between logo and text */
+    gap: 10px;
+}
+
+/* Styles for the logo image */
+.navbar-logo img {
+    /* Sets fixed height for logo image */
+    height: 40px;
+    /* Note: width will adjust proportionally */
+}
+
+/* Styles for the text next to logo */
+.navbar-logo span {
+    /* Sets font size to 1.5 times root element */
+    font-size: 1.5rem;
+    /* Makes the text bold */
+    font-weight: bold;
+}
+
+/* Styles for the navigation links container */
+.navbar-links {
+    /* Uses flexbox for horizontal link layout */
+    display: flex;
+    /* Removes default list styling */
+    list-style: none;
+    /* Adds 30px space between list items */
+    gap: 30px;
+    /* Vertically centers the links */
+    align-items: center;
+}
+
+/* Styles for anchor tags within list items */
+.navbar-links li a {
+    /* Sets link text color to white */
+    color: white;
+    /* Removes default underline from links */
+    text-decoration: none;
+    /* Sets font size slightly larger than normal */
+    font-size: 1.1rem;
+}
+
+/* Hover state for navigation links */
+.navbar-links li a:hover {
+    /* Changes text color to teal on hover */
+    color: #00c4b4;
+}
+
+/* Styles for the request quote button */
+.request-quote-btn {
+    /* Sets teal background color */
+    background-color: #00c4b4;
+    /* Sets text color to white */
+    color: white;
+    /* Removes default border */
+    border: none;
+    /* Adds padding for button size */
+    padding: 10px 20px;
+    /* Creates rounded corners */
+    border-radius: 25px;
+    /* Changes cursor to pointer on hover */
+    cursor: pointer;
+    /* Sets standard font size */
+    font-size: 1rem;
+    /* Makes button text bold */
+    font-weight: bold;
+}
+
+/* Hover state for request quote button */
+.request-quote-btn:hover {
+    /* Changes to darker teal on hover */
+    background-color: #00a89a;
+}

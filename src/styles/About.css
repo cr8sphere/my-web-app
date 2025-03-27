@@ -1,0 +1,285 @@
+/* src/styles/About.css */
+
+/* Styles for the main container of the about section */
+.about-container {
+    background-color: #f5f7f5;
+    /* Light grayish-green background */
+}
+
+/* Styles for the Behind Cre8sphere Creative section */
+.behind-section {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    /* White background for contrast */
+}
+
+/* Heading styles for the Behind section */
+.behind-section h2 {
+    font-size: 2.5rem;
+    color: #1a2a2f;
+    /* Dark teal color */
+    margin-bottom: 20px;
+}
+
+/* Paragraph styles for the Behind section */
+.behind-section p {
+    font-size: 1.2rem;
+    color: #666;
+    /* Gray color for text */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styles for the Meet the Team section */
+.team-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #e6f0ea;
+    /* Light green background */
+}
+
+/* Heading styles for the Meet the Team section */
+.team-section h2 {
+    font-size: 2.5rem;
+    color: #1a2a2f;
+    margin-bottom: 30px;
+}
+
+/* Styles for the scrollable container of team members */
+.team-scroll {
+    display: flex;
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    gap: 20px;
+    /* Space between team members */
+    padding-bottom: 10px;
+    /* Space for scrollbar */
+    justify-content: center;
+    /* Centers items if they don't fill the container */
+    scroll-behavior: smooth;
+    /* Smooth scrolling effect */
+}
+
+/* Hides the scrollbar but keeps it functional */
+.team-scroll::-webkit-scrollbar {
+    display: none;
+    /* Hides scrollbar in Webkit browsers */
+}
+
+.team-scroll {
+    -ms-overflow-style: none;
+    /* Hides scrollbar in IE and Edge */
+    scrollbar-width: none;
+    /* Hides scrollbar in Firefox */
+}
+
+/* Styles for each team member container */
+.team-member {
+    flex: 0 0 auto;
+    /* Prevents shrinking and ensures fixed width */
+    display: flex;
+    flex-direction: column;
+    /* Stacks image and name vertically */
+    align-items: center;
+    /* Centers content horizontally */
+}
+
+/* Styles for the team member image */
+.team-image {
+    width: 150px;
+    /* Fixed width for circular image */
+    height: 150px;
+    /* Fixed height for circular image */
+    border-radius: 50%;
+    /* Makes the image circular */
+    object-fit: cover;
+    /* Ensures the image fits within the circle without distortion */
+    background-color: #ccc;
+    /* Gray placeholder color in case the image fails to load */
+}
+
+/* Styles for the team member name */
+.team-name {
+    margin-top: 10px;
+    /* Space between image and name */
+    font-size: 1rem;
+    color: #1a2a2f;
+    /* Dark teal color for the name */
+    font-weight: 500;
+    /* Slightly bold for emphasis */
+}
+
+/* Styles for the What We Stand For section */
+.values-section {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+/* Heading styles for the Values section */
+.values-section h2 {
+    font-size: 2.5rem;
+    color: #1a2a2f;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styles for the Values section */
+.values-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Styles for the grid layout of values */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4-column grid */
+    gap: 20px;
+    /* Space between grid items */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styles for each value item */
+.value-item {
+    text-align: center;
+}
+
+/* Styles for the value icon (checkmark) */
+.value-icon {
+    font-size: 1.5rem;
+    color: #00c4b4;
+    /* Teal color for the icon */
+    margin-bottom: 10px;
+}
+
+/* Heading styles for each value */
+.value-item h3 {
+    font-size: 1.3rem;
+    color: #1a2a2f;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles for each value description */
+.value-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Styles for the Your Brand, Our Creativity section */
+.cta-section {
+    padding: 50px;
+    background-color: #e6f0ea;
+    /* Light green background */
+    text-align: center;
+}
+
+/* Styles for the content wrapper within the CTA section */
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    /* Aligns text and button on opposite sides */
+    align-items: center;
+    /* Vertically centers content */
+    background-color: white;
+    /* White background for the content area */
+    padding: 30px 50px;
+    /* Padding inside the content area */
+    border-radius: 10px;
+    /* Rounded corners */
+    max-width: 900px;
+    /* Limits the width of the content area */
+    margin: 0 auto;
+    /* Centers the content area */
+}
+
+/* Styles for the text container within the CTA section */
+.cta-text {
+    text-align: left;
+    /* Aligns text to the left */
+}
+
+/* Heading styles for the CTA section */
+.cta-text h2 {
+    font-size: 2rem;
+    color: #1a2a2f;
+    /* Dark teal color */
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles for the CTA section */
+.cta-text p {
+    font-size: 1.1rem;
+    color: #666;
+    /* Gray color for text */
+}
+
+/* Styles for the Start Your Journey button */
+.cta-btn {
+    background-color: #00c4b4;
+    /* Teal background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    /* Rounded corners */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Matches the uppercase text in the image */
+}
+
+/* Hover effect for the button */
+.cta-btn:hover {
+    background-color: #00a89a;
+    /* Darker teal on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2-column grid on smaller screens */
+    }
+
+    .team-image {
+        width: 120px;
+        /* Smaller size for team images */
+        height: 120px;
+    }
+
+    .cta-content {
+        flex-direction: column;
+        /* Stacks text and button vertically */
+        text-align: center;
+        /* Centers text */
+        padding: 20px;
+        /* Reduced padding */
+    }
+
+    .cta-text {
+        text-align: center;
+        /* Centers text on smaller screens */
+        margin-bottom: 20px;
+        /* Space between text and button */
+    }
+}
+
+/* Responsive design for very small screens */
+@media (max-width: 480px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+        /* 1-column grid on very small screens */
+    }
+
+    .behind-section,
+    .team-section,
+    .values-section,
+    .cta-section {
+        padding: 30px;
+        /* Reduced padding for smaller screens */
+    }
+}

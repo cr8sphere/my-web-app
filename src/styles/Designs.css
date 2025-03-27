@@ -1,0 +1,94 @@
+/* src/styles/Designs.css */
+
+/* Styles for the main container of the designs section */
+.designs-container {
+    padding: 50px;
+    background-color: #f5f7f5;
+    /* Light grayish-green background */
+    text-align: center;
+}
+
+/* Styles for the section heading */
+.designs-container h2 {
+    font-size: 2.5rem;
+    color: #1a2a2f;
+    /* Dark teal color */
+    margin-bottom: 30px;
+}
+
+/* Styles for the scrollable container of images */
+.designs-scroll {
+    display: flex;
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    gap: 20px;
+    /* Space between images */
+    padding-bottom: 10px;
+    /* Space for scrollbar */
+    margin-bottom: 30px;
+    /* Space below the scroll container */
+    scroll-behavior: smooth;
+    /* Smooth scrolling effect */
+}
+
+/* Hides the scrollbar but keeps it functional */
+.designs-scroll::-webkit-scrollbar {
+    display: none;
+    /* Hides scrollbar in Webkit browsers */
+}
+
+/* Ensures the container is still scrollable even with hidden scrollbar */
+.designs-scroll {
+    -ms-overflow-style: none;
+    /* Hides scrollbar in IE and Edge */
+    scrollbar-width: none;
+    /* Hides scrollbar in Firefox */
+}
+
+/* Styles for each image container */
+.design-image {
+    flex: 0 0 auto;
+    /* Prevents shrinking and ensures fixed width */
+    width: 300px;
+    /* Fixed width for each image */
+    height: 200px;
+    /* Fixed height for each image */
+}
+
+/* Styles for the images */
+.design-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures images cover the container without distortion */
+    border-radius: 10px;
+    /* Rounded corners for images */
+}
+
+/* Styles for the Explore More button */
+.explore-btn {
+    background-color: #00c4b4;
+    /* Teal background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Hover effect for the button */
+.explore-btn:hover {
+    background-color: #00a89a;
+    /* Darker teal on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .design-image {
+        width: 200px;
+        /* Smaller width for images on smaller screens */
+        height: 150px;
+    }
+}

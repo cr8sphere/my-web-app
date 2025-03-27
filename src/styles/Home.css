@@ -1,0 +1,91 @@
+/* src/styles/Home.css */
+
+/* Styles for the main container div */
+.home-container {
+    /* Sets height to full viewport height */
+    height: 100vh;
+    /* Uses flexbox for layout control */
+    display: flex;
+    /* Vertically centers content */
+    align-items: center;
+    /* Aligns content to the left side */
+    justify-content: flex-start;
+    /* Adds padding on left and right */
+    padding: 0 50px;
+    /* Creates a diagonal gradient background from dark teal to lighter teal */
+    background: linear-gradient(135deg, #1a2a2f 0%, #2a3b40 100%);
+    /* Sets text color to white for all children */
+    color: white;
+}
+
+/* Styles for the content wrapper div */
+.home-content {
+    /* Limits maximum width of content to 600 pixels */
+    max-width: 600px;
+}
+
+/* Styles for h2 elements within home-content */
+.home-content h2 {
+    /* Sets font size to 1.5 times the root element */
+    font-size: 1.5rem;
+    /* Applies teal color to subheading */
+    color: #00c4b4;
+    /* Adds space below the subheading */
+    margin-bottom: 10px;
+}
+
+/* Styles for h1 elements within home-content */
+.home-content h1 {
+    /* Sets larger font size for main heading */
+    font-size: 3.5rem;
+    /* Makes the heading bold */
+    font-weight: bold;
+    /* Adds space below the heading */
+    margin-bottom: 20px;
+}
+
+/* Styles for all p elements within home-content */
+.home-content p {
+    /* Sets font size slightly larger than normal */
+    font-size: 1.2rem;
+    /* Increases line spacing for readability */
+    line-height: 1.6;
+    /* Adds space below paragraphs */
+    margin-bottom: 20px;
+}
+
+/* Styles for elements with subtext class within home-content */
+.home-content .subtext {
+    /* Sets standard font size */
+    font-size: 1rem;
+    /* Applies italic styling to text */
+    font-style: italic;
+    /* Uses light gray color for contrast */
+    color: #b0b0b0;
+}
+
+/* Styles for the button with create-btn class */
+.create-btn {
+    /* Sets teal background color */
+    background-color: #00c4b4;
+    /* Sets text color to white */
+    color: white;
+    /* Removes default border */
+    border: none;
+    /* Adds padding for button size */
+    padding: 15px 30px;
+    /* Creates rounded corners */
+    border-radius: 25px;
+    /* Changes cursor to pointer on hover */
+    cursor: pointer;
+    /* Sets button text size */
+    font-size: 1.2rem;
+    /* Makes button text bold */
+    font-weight: bold;
+}
+
+/* Hover state styles for create-btn */
+.create-btn:hover {
+    /* Changes background to a slightly darker teal on hover */
+    background-color: #00a89a;
+}

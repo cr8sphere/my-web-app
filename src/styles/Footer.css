@@ -1,0 +1,183 @@
+/* src/styles/Footer.css */
+
+/* Styles for the footer element */
+.footer {
+    background-color: #1a2a2f;
+    /* Dark teal background */
+    color: white;
+    /* White text color */
+    padding: 50px 0;
+    /* Padding for top and bottom */
+}
+
+/* Styles for the main container of the footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    /* Distributes columns evenly */
+    max-width: 1200px;
+    /* Limits the width of the content */
+    margin: 0 auto;
+    /* Centers the container */
+    padding: 0 50px;
+    /* Padding on the sides */
+}
+
+/* Styles for each column in the footer */
+.footer-column {
+    flex: 1;
+    /* Each column takes equal space */
+    margin: 0 20px;
+    /* Space between columns */
+}
+
+/* Styles for the logo and company name */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Space between logo and text */
+    margin-bottom: 20px;
+    /* Space below the logo */
+}
+
+/* Styles for the logo image */
+.footer-logo img {
+    height: 40px;
+    /* Adjust based on your logo size */
+}
+
+/* Styles for the company name next to the logo */
+.footer-logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Paragraph styles in the footer */
+.footer-column p {
+    font-size: 1rem;
+    color: #b0b0b0;
+    /* Light gray color for text */
+    line-height: 1.6;
+    /* Improved readability */
+    margin-bottom: 20px;
+    /* Space below paragraphs */
+}
+
+/* Styles for the social media icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    /* Space between icons */
+}
+
+/* Styles for social media links */
+.social-icons a {
+    color: white;
+    /* White color for icons */
+    font-size: 1.5rem;
+    /* Size of the icons */
+    text-decoration: none;
+    /* Removes underline */
+}
+
+/* Hover effect for social media icons */
+.social-icons a:hover {
+    color: #00c4b4;
+    /* Teal color on hover */
+}
+
+/* Heading styles for footer columns */
+.footer-column h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    /* Space below headings */
+}
+
+/* Styles for unordered lists in footer columns */
+.footer-column ul {
+    list-style: none;
+    /* Removes default bullets */
+    padding: 0;
+    /* Removes default padding */
+}
+
+/* Styles for list items in footer columns */
+.footer-column ul li {
+    margin-bottom: 10px;
+    /* Space between list items */
+}
+
+/* Styles for links in footer columns */
+.footer-column ul li a {
+    color: #b0b0b0;
+    /* Light gray color for links */
+    text-decoration: none;
+    /* Removes underline */
+    font-size: 1rem;
+}
+
+/* Hover effect for footer links */
+.footer-column ul li a:hover {
+    color: #00c4b4;
+    /* Teal color on hover */
+}
+
+/* Styles for the copyright notice at the bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #2a3b40;
+    /* Subtle border above the copyright */
+    margin-top: 30px;
+    /* Space above the copyright */
+}
+
+/* Paragraph styles for the copyright notice */
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    /* Light gray color */
+    margin: 0;
+    /* Removes default margin */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        /* Stacks columns vertically */
+        text-align: center;
+        /* Centers text */
+        padding: 0 30px;
+        /* Reduced padding */
+    }
+
+    .footer-column {
+        margin: 20px 0;
+        /* Space between columns when stacked */
+    }
+
+    .footer-logo {
+        justify-content: center;
+        /* Centers logo and text */
+    }
+
+    .social-icons {
+        justify-content: center;
+        /* Centers social icons */
+    }
+}
+
+/* Responsive design for very small screens */
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 0;
+        /* Reduced padding */
+    }
+
+    .footer-container {
+        padding: 0 20px;
+        /* Further reduced padding */
+    }
+}
